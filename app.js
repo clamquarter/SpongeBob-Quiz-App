@@ -87,8 +87,10 @@ let questionNumber = 1
 function generateQuiz() {
   //generates an HTML template for the quiz start page.
   //includes h2 are you ready, and a start button.
-  return `<h2>You Ready?</h2>
-  <button class='js-start-button'>Start</button>`
+  return `
+  <div class='group'>
+  <button class='js-start-button'>Start</button>
+  </div>`
 }
 
 function quizQuestion() {
@@ -97,22 +99,30 @@ function quizQuestion() {
   
   return `
   <h3>${store.questions[store.questionNumber].question}</h3>
-  <form id='js-quiz-question' >
-    <input type="radio" name="answer" id="answer1"  value="${store.questions[store.questionNumber].answers[0]}" required>
-    <label for="answer1">${store.questions[store.questionNumber].answers[0]}</label>
   
-    <input type="radio" name="answer" id="answer2" value="${store.questions[store.questionNumber].answers[1]}" required>
-    <label for="answer2">${store.questions[store.questionNumber].answers[1]}</label>
+  <form id='js-quiz-question' >
+  <section class='container'>
+  <div class='group'>
+    <div class='item'><input type="radio" name="answer" id="answer1"  value="${store.questions[store.questionNumber].answers[0]}" required>
+    <label for="answer1">${store.questions[store.questionNumber].answers[0]}</label></div>
+  
+    <div class='item'><input type="radio" name="answer" id="answer2" value="${store.questions[store.questionNumber].answers[1]}" required>
+    <label for="answer2">${store.questions[store.questionNumber].answers[1]}</label></div>
 
-    <input type="radio" name="answer" id="answer3" value="${store.questions[store.questionNumber].answers[2]}" required>
-    <label for="answer3">${store.questions[store.questionNumber].answers[2]}</label>
+    <div class='item'><input type="radio" name="answer" id="answer3" value="${store.questions[store.questionNumber].answers[2]}" required>
+    <label for="answer3">${store.questions[store.questionNumber].answers[2]}</label></div>
     
-    <input type="radio" name="answer" id="answer4" value="${store.questions[store.questionNumber].answers[3]}" required>
-    <label for="answer4">${store.questions[store.questionNumber].answers[3]}</label>
+    <div class='item'><input type="radio" name="answer" id="answer4" value="${store.questions[store.questionNumber].answers[3]}" required>
+    <label for="answer4">${store.questions[store.questionNumber].answers[3]}</label></div>     
+  </div>
+    <div class='group'>
     <button class="submit" type="submit">Submit</button>
+    </div>
+    </section>
   </form>
   
-  <p><small>${questionNumber} of 5 Questions | Score: ${store.score}</small></p>`
+  
+  <footer><small>${questionNumber} of 5 Questions | Score: ${store.score}</small></footer>`
 }
 
 function generateQuestionResult(bool) {
@@ -122,10 +132,12 @@ function generateQuestionResult(bool) {
     result = "Right!"
   } else {result = "WRONG :("}
   return `
-  <h2>You Got It ${result}</h2>
+  <div class='group'>
+  <div class='item'><h2>You Got It ${result}</h2>
 <p class="results">The answer is:</p>
-<p class="results">${store.questions[store.questionNumber - 1].correctAnswer}</p>
-<button class="js-next-question-button">Continue</button>
+<p class="results">${store.questions[store.questionNumber - 1].correctAnswer}</p></div>
+</div>
+<div class='group'><button class="js-next-question-button">Continue</button></div>
   `
 }
 
@@ -140,7 +152,7 @@ function generateQuizResultsPage() {
 return `
 <h2>You Finished!</h2>
 <p>You scored ${store.score} out of ${store.questions.length}. ${feedback}</p>
-<button class="js-restart-button">Play Again?</button>
+<div class='group'><button class="js-restart-button">Play Again?</button></div>
 `
 }
 

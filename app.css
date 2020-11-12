@@ -7,19 +7,86 @@
   *
 */
 
+ body {
+  padding: 20px;
+  background-image: url("./images/spongebob-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #FFF56C;
+  background-position: center 150px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  background-color: #0457A0;
+
+  border-radius: 20px;
+  color: WHITE;
+  margin: 10px;
+}
 div {
-  border-style: dotted;
-  border-width: 10px;
   margin-top: 50px;
   margin-left: auto;
   padding: 10px;
 }
 
-h1, h2, .results {
+img {
+  size: 100%;
+}
+
+h1, h2, h3, .results, p {
   text-align: center;
 }
 
+h3 {
+  text-decoration: teal;
+  text-shadow: teal;
+  font-weight: 800;
+  
+}
+
+p {
+  font-size: large;
+}
+
+footer {
+  text-align: right;
+  padding-right: 20px;
+  font-weight: 800;
+  font-size: medium;
+}
+
 button {
- text-align: center;
+  size: 50%;
+  border: 2px solid darkblue;
+  color: black;
+  text-align: center;
+  font-size: larger;
+  padding: 10px;
+  border-radius: 30px;
+  transition-duration: 0.4s;
+  background-color: #FFF56C;
+}
+
+button:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+
+
+radio:hover{
+background-color: darkblue;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.item {
+  margin: 10px;
+  font-size: 16px;
 }
 
