@@ -1,0 +1,25 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+div {
+  border-style: dotted;
+  border-width: 10px;
+  margin-top: 50px;
+  margin-left: auto;
+  padding: 10px;
+}
+
+h1, h2, .results {
+  text-align: center;
+}
+
+button {
+ text-align: center;
+}
+
