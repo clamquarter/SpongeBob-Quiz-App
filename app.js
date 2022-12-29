@@ -133,7 +133,7 @@ function generateQuestionResult(bool) {
   } else {result = "WRONG :("}
   return `
   <div class='group'>
-  <div class='item'><h2>You Got It ${result}</h2>
+  <div class='item colored-border'><h2>You Got It ${result}</h2>
 <p class="results">The answer is:</p>
 <p class="results">${store.questions[store.questionNumber - 1].correctAnswer}</p></div>
 </div>
