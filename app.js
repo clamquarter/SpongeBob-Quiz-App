@@ -132,10 +132,10 @@ function generateQuestionResult(bool) {
     result = "Right!"
   } else {result = "WRONG :("}
   return `
-  <div class='group coloredborder'>
-  <div class='item coloredborder'><h2>You Got It ${result}</h2>
-<p class="results coloredborder">The answer is:</p>
-<p class="results coloredborder">${store.questions[store.questionNumber - 1].correctAnswer}</p></div>
+  <div class='group '>
+  <div class='item coloredbackground'><h2>You Got It ${result}</h2>
+<p class="results ">The answer is:</p>
+<p class="results ">${store.questions[store.questionNumber - 1].correctAnswer}</p></div>
 </div>
 <div class='group'><button class="js-next-question-button">Continue</button></div>
   `
@@ -150,7 +150,7 @@ function generateQuizResultsPage() {
     feedback = "Do you even SPONGE?? Try again..."
   }
 return `
-<div class='colored-border'>
+<div class='results'>
 <h2>You Finished!</h2>
 <p>You scored ${store.score} out of ${store.questions.length}. ${feedback}</p>
 </div>

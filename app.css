@@ -9,17 +9,15 @@
 
  body {
   padding: 20px;
-  background-image: url("./images/spongebob-background.jpg");
-  background-size: cover;
+  background-image: url("./images/spongebob-background2.jpg");
   background-repeat: no-repeat;
-  background-color: #FFF56C;
-  background-position: center 150px;
+  background-size: auto;
+  background-position: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
   background-color: #0457A0;
-
   border-radius: 20px;
   color: WHITE;
   margin: 10px;
@@ -29,15 +27,9 @@ div {
   margin-left: auto;
   padding: 10px;
 }
-coloredborder {
+.results {
  font-size: large;
-    background: #FFF56C;
-padding: 35px;
--moz-border-radius: 35px;
--webkit-border-radius: 35px;
--o-border-radius: 35px;
--ms-border-radius: 35px;
- border-radius: 35px;
+padding: 25px;
 }
 
 img {
@@ -46,6 +38,7 @@ img {
 
 h1, h2, h3, .results, p {
   text-align: center;
+  color: white;
 }
 
 h3 {
@@ -69,25 +62,25 @@ footer {
 
 button {
   size: 50%;
-  border: 2px solid darkblue;
-  color: black;
+  border: 2px solid #0457A0;
+  color: white;
   text-align: center;
   font-size: larger;
   padding: 10px;
   border-radius: 30px;
   transition-duration: 0.4s;
-  background-color: #FFF56C;
+  background-color: #0457A0;
 }
 
 button:hover {
-  background-color: darkblue;
-  color: white;
+  background-color: #FFF56C;
+  color: black;
 }
 
 
 
 radio:hover{
-background-color: darkblue;
+background-color: #0457A0;
 }
 
 .group {
@@ -97,7 +90,14 @@ background-color: darkblue;
 }
 
 .item {
+  color: white;
   margin: 10px;
-  font-size: 16px;
+  font-size: 20px;
+ border-radius: 35px;
+ 
+}
+
+.coloredbackground {
+  background-color: #0457A0;
 }
 
