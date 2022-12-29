@@ -150,8 +150,10 @@ function generateQuizResultsPage() {
     feedback = "Do you even SPONGE?? Try again..."
   }
 return `
+<div class='colored-border'>
 <h2>You Finished!</h2>
 <p>You scored ${store.score} out of ${store.questions.length}. ${feedback}</p>
+</div>
 <div class='group'><button class="js-restart-button">Play Again?</button></div>
 `
 }
