@@ -1,7 +1,7 @@
 # SpongeBob Quiz App
 
 <h3>Summary</h3>
-In this app, the user takes a short quiz about Spongebob, of course. It's a very simple 5-question quiz with 3 result options. A working deployment can be found <a href="https://clamquarter.github.io/SpongeBob-Quiz-App/">here</a>. This web app is a an assignment from the Thinkful Engineering Immersion Intro. Students were tasked with:
+In this app, the user takes a short quiz about Spongebob, of course. It's a very simple 5-question quiz with 3 result options. A working deployment can be found <a href="https://clamquarter.github.io/SpongeBob-Quiz-App/">here</a>. This is an assignment from the Thinkful Engineering Immersion Intro. Students were tasked with:<br><br>
 
 <ul>
 <li>Building a javascript based web app with minimal text in index.html</li>
