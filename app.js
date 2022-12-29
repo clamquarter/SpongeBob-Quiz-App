@@ -134,8 +134,8 @@ function generateQuestionResult(bool) {
   return `
   <div class='group'>
   <div class='item colored-border'><h2>You Got It ${result}</h2>
-<p class="results">The answer is:</p>
-<p class="results">${store.questions[store.questionNumber - 1].correctAnswer}</p></div>
+<p class="results colored-border">The answer is:</p>
+<p class="results colored-border">${store.questions[store.questionNumber - 1].correctAnswer}</p></div>
 </div>
 <div class='group'><button class="js-next-question-button">Continue</button></div>
   `
