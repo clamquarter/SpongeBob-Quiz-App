@@ -29,6 +29,16 @@ div {
   margin-left: auto;
   padding: 10px;
 }
+colored-border {
+ font-size: large;
+    background: #FFF56C;
+padding: 35px;
+-moz-border-radius: 35px;
+-webkit-border-radius: 35px;
+-o-border-radius: 35px;
+-ms-border-radius: 35px;
+ border-radius: 35px;
+}
 
 img {
   size: 100%;
